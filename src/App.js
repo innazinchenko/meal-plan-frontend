@@ -33,7 +33,7 @@ const updatingInInput = (_id, title) => {
       />
 
       <button onClick=
-      {editing ? () => editMeal(mealId, title, setTitle, setMeal, setEditing) : () => addMeal(title, setTitle, setMeal)}>
+      {editing ? () => editMeal(mealId, title,  setMeal, setTitle, setEditing) : () => addMeal(title, setTitle, setMeal)}>
       {editing ? "Edit" : "Add"}
         </button>
 
