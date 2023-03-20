@@ -16,7 +16,7 @@ const addMeal = (title, setTitle, setMeal) => {
     })
 }
 
-const editMeal = (mealId, title, setTitle, setMeal, setEditing) => {
+const editMeal = (mealId, title, setMeal,  setTitle, setEditing) => {
     axios.post('https://meal-plan-946c.onrender.com/editMeal', { _id: mealId, title })
     .then((data) => {
         console.log(data)
